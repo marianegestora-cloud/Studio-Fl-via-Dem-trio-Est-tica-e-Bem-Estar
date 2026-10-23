@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+<meta name="description" content="Procura limpeza de pele perto de você em São Bernardo do Campo? Conheça o Studio Flávia Demétrio, localizado no bairro Paulicéia.">
+<title>Limpeza de Pele em São Bernardo do Campo, Paulicéia - SP | Studio Flávia Demétrio</title>
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="imagem/logo-icone-flavia.jpg" type="image/x-icon">
+  <style>
+/* ==========================================================
+   Studio Flávia Demétrio Estética e Bem Estar – Página: Limpeza de Pele
+   Cores: roxo e dourado
+   ========================================================== */
+
+:root {
+  --roxo-escuro: #2a0f3d;
+  --roxo: #4b2370;
+  --roxo-claro: #6b3a8f;
+  --dourado: #d4af4f;
+  --dourado-escuro: #b8922f;
+  --creme: #f6f1e9;
+  --branco: #ffffff;
+  --texto: #3d3346;        /* texto de leitura: contraste bom no branco e no creme */
+  --texto-claro: #e9dff2;  /* texto sobre fundo roxo */
+
+  --fonte-titulo: "Playfair Display", Georgia, serif;
+  --fonte-texto: "Jost", "Helvetica Neue", Arial, sans-serif;
+
+  --largura: 1080px;
+  --raio: 4px;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: var(--fonte-texto);
+  font-size: 1.0625rem;      /* 17px: legível no celular */
+  line-height: 1.7;
+  color: var(--texto);
+  background: var(--branco);
+}
+
+img { max-width: 100%; display: block; }
+
+h1, h2, h3 {
+  font-family: var(--fonte-titulo);
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+  color: var(--roxo);
+}
+
+p { margin: 0 0 1rem; }
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 3px solid var(--dourado);
+  outline-offset: 3px;
+}
+
+.container {
+  width: min(100% - 2.5rem, var(--largura));
+  margin-inline: auto;
+}
+
+.rotulo {
+  display: block;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--dourado-escuro);
+  margin-bottom: 0.75rem;
+}
+
+/* ---------- Botões ---------- */
+.botoes { display: flex; flex-wrap: wrap; gap: 0.9rem; margin-top: 1.5rem; }
+
+.btn {
+  display: inline-block;
+  padding: 0.85rem 1.7rem;
+  border-radius: var(--raio);
+  font-family: var(--fonte-texto);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.btn-dourado {
+  background: var(--dourado);
+  color: #ffffff;   /* branco */
+
+  box-shadow: 0 6px 18px rgba(212, 175, 79, 0.35);
+}
+.btn-dourado:hover { background: #e2c06a; }
+
+.btn-contorno {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: var(--branco);
+}
+.btn-contorno:hover { background: rgba(255, 255, 255, 0.12); border-color: var(--branco); }
+
+/* ---------- Hero ---------- */
+.hero {
+  background: radial-gradient(circle at 80% 20%, var(--roxo-claro) 0%, var(--roxo) 45%, var(--roxo-escuro) 100%);
+  color: var(--texto-claro);
+  padding: 5rem 0;
+}
+
+.hero .container {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.hero .rotulo { color: var(--dourado); }
+
+.hero h1 {
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  color: var(--branco);
+}
+.hero h1 span { color: var(--dourado); }
+
+.hero p { max-width: 52ch; }
+
+.hero-img {
+  position: relative;
+  border-radius: var(--raio);
+  overflow: hidden;
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.4);
+  aspect-ratio: 4 / 5;
+}
+.hero-img img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+.hero-img .marca {
+  position: absolute;
+  left: 0.75rem;
+  bottom: 0.75rem;
+  background: rgba(42, 15, 61, 0.7);
+  color: var(--branco);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.7rem;
+  border-radius: 2px;
+}
+
+/* ---------- O que é ---------- */
+.secao { padding: 5rem 0; }
+
+.cartao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--branco);
+  box-shadow: 0 10px 40px rgba(42, 15, 61, 0.12);
+  overflow: hidden;
+}
+.cartao-img img { width: 100%; height: 100%; object-fit: cover; }
+.cartao-texto { padding: 2.5rem; align-self: center; }
+.cartao-texto h2 { font-size: 1.7rem; }
+
+/* ---------- Para quem é indicada ---------- */
+.indicada {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  background: var(--roxo-escuro);
+  color: var(--texto-claro);
+}
+.indicada-img img { width: 100%; height: 100%; object-fit: cover; }
+.indicada-texto { padding: 3rem; align-self: center; }
+.indicada-texto h2 { color: var(--branco); font-size: 1.6rem; }
+.indicada-texto h3 { color: var(--branco); }
+.indicada .rotulo { color: var(--dourado); }
+
+.lista { list-style: none; padding: 0; margin: 1.5rem 0 2rem; }
+.lista li {
+  padding: 0.75rem 0 0.75rem 1.6rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  position: relative;
+}
+.lista li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1.35rem;
+  width: 0.7rem;
+  height: 1px;
+  background: var(--dourado);
+}
+
+/* ---------- Benefícios ---------- */
+.beneficios { background: var(--creme); text-align: center; }
+.beneficios h2 { font-size: 1.8rem; max-width: 24ch; margin-inline: auto; }
+.beneficios .intro { max-width: 60ch; margin: 0 auto 2.5rem; }
+
+.grade-beneficios {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: left;
+}
+.beneficio {
+  background: var(--branco);
+  padding: 1.1rem 1.3rem 1.1rem 2.4rem;
+  position: relative;
+  box-shadow: 0 4px 14px rgba(42, 15, 61, 0.08);
+}
+.beneficio::before {
+  content: "";
+  position: absolute;
+  left: 1.1rem;
+  top: 1.6rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--dourado);
+}
+
+/* ---------- Antes e depois ---------- */
+.antes-depois { text-align: center; }
+.antes-depois h2 { font-size: 1.8rem; max-width: 24ch; margin: 0 auto 2.5rem; }
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.galeria figure {
+  margin: 0;
+  aspect-ratio: 1 / 1;      /* todas do mesmo tamanho */
+  overflow: hidden;
+  background: var(--creme);
+}
+.galeria img { width: 100%; height: 100%; object-fit: cover; }
+
+/* última foto sozinha numa linha: centraliza em vez de deixar vazio */
+.galeria figure:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  width: calc(50% - 0.5rem);
+  justify-self: center;
+}
+
+/* ---------- Localização ---------- */
+.localizacao { background: var(--creme); }
+.local-cartao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--creme);
+  box-shadow: 0 10px 40px rgba(42, 15, 61, 0.12);
+}
+.local-texto { padding: 2.5rem; align-self: center; }
+.local-texto h2 { font-size: 1.6rem; }
+.local-mapa { min-height: 320px; background: var(--roxo); }
+.local-mapa iframe { width: 100%; height: 100%; min-height: 320px; border: 0; }
+
+/* ---------- Dúvidas frequentes ---------- */
+.duvidas { background: var(--creme); }
+.duvidas .container { max-width: 760px; }
+.duvidas h2 { text-align: center; font-size: 1.8rem; margin-bottom: 2rem; }
+.duvidas .rotulo { text-align: center; }
+
+details {
+  background: var(--branco);
+  margin-bottom: 0.7rem;
+  box-shadow: 0 3px 12px rgba(42, 15, 61, 0.07);
+}
+summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 1.1rem 3rem 1.1rem 1.4rem;
+  font-family: var(--fonte-titulo);
+  font-weight: 600;
+  color: var(--roxo);
+  position: relative;
+}
+summary::-webkit-details-marker { display: none; }
+summary::after {
+  content: "+";
+  position: absolute;
+  right: 1.4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.4rem;
+  color: var(--dourado-escuro);
+}
+details[open] summary::after { content: "−"; }
+details p { padding: 0 1.4rem 1.2rem; margin: 0; }
+
+/* ---------- Chamada final ---------- */
+.final {
+  background: linear-gradient(135deg, var(--roxo-claro), var(--roxo-escuro));
+  color: var(--texto-claro);
+  text-align: center;
+  padding: 4.5rem 0;
+}
+.final h2 { color: var(--branco); font-size: 1.9rem; max-width: 22ch; margin-inline: auto; }
+.final .rotulo { color: var(--dourado); }
+.final p { max-width: 50ch; margin: 0 auto 1.5rem; }
+
+/* ---------- Botão centralizado e botão roxo ---------- */
+.botao-centro { text-align: center; margin-top: 2.5rem; }
+.btn-roxo { background: var(--roxo); color: var(--branco); }
+.btn-roxo:hover { background: var(--roxo-claro); }
+
+/* ---------- Rodapé ---------- */
+.rodape {
+  background: #1b0a28;
+  color: var(--texto-claro);
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+}
+.rodape strong { display: block; color: var(--dourado); margin-bottom: 0.2rem; }
+
+/* ---------- Redes sociais (rodapé) ---------- */
+.social {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 1.2rem 0;
+  padding: 0;
+  list-style: none;
+}
+.social a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.6rem 1.1rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 999px;
+  color: var(--texto-claro);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s, transform 0.2s;
+}
+.social a:hover {
+  background: var(--dourado);
+  border-color: var(--dourado);
+  color: var(--roxo-escuro);
+  transform: translateY(-2px);
+}
+.social svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ---------- Celular e tablet ---------- */
+@media (max-width: 820px) {
+  .hero { padding: 3rem 0; }
+  .hero .container,
+  .cartao,
+  .indicada,
+  .local-cartao { grid-template-columns: 1fr; }
+
+  .hero-img { max-width: 340px; margin-inline: auto; order: -1; }
+  .cartao-img img,
+  .indicada-img img { max-height: 420px; }
+  .cartao-texto,
+  .indicada-texto,
+  .local-texto { padding: 1.8rem 1.4rem; }
+
+  .secao { padding: 3.5rem 0; }
+  .grade-beneficios { grid-template-columns: 1fr; }
+  .galeria figure:last-child:nth-child(odd) { width: 100%; }
+}
+
+@media (max-width: 480px) {
+  .galeria { grid-template-columns: 1fr; }
+  .btn { width: 100%; text-align: center; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .btn { transition: none; }
+  .social a { transition: none; }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- ===================== HERO ===================== -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-texto">
+        <span class="rotulo">Studio Flávia Demétrio Estética e Bem Estar</span>
+        <h1>Limpeza de Pele  em São Bernardo do Campo Paulicéia</h1>
+        <div class="botoes">
+          <!-- TROQUE o número do WhatsApp: 55 + DDD + número -->
+          <a class="btn btn-dourado" href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20limpeza%20de%20pele" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="imagem/limpeza-de-pele-sbc-pauliceia-sp.jpg" alt="Cliente durante limpeza de pele  no Studio Flávia Demétrio Estética e Bem Estar">
+        <span class="marca">Studio Flávia Demétrio Estética e Bem Estar</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== O QUE É ===================== -->
+    <section class="secao">
+      <div class="container">
+        <div class="cartao">
+          <div class="cartao-img">
+            <img src="imagem/limpeza-de-pele-sbc-pauliceia.jpg" alt="Cliente fazendo limpeza de pele em Paulicéia">
+          </div>
+          <div class="cartao-texto">
+  <h2>O que é limpeza de pele em Paulicéia?</h2>
+
+  <p>Você sente que sua pele está oleosa, com cravos ou com aspecto opaco? A limpeza de pele é um procedimento estético que ajuda a remover impurezas, células mortas e o excesso de oleosidade, contribuindo para uma pele com aparência mais limpa e cuidada.</p>
+
+  <p>Mesmo lavando o rosto diariamente, alguns resíduos e cravos podem permanecer nos poros. Por isso, os cuidados profissionais podem complementar a rotina de higienização em casa, respeitando as características e as necessidades de cada tipo de pele.</p>
+
+  <p>Eu sou Flávia, esteticista, e realizo limpeza de pele no meu Studio Flávia Demétrio Estética e Bem-Estar, em Paulicéia, São Bernardo do Campo. Meu objetivo é oferecer um atendimento personalizado, com cuidado e atenção às necessidades da sua pele.</p>
+
+  <p>Quer cuidar melhor do seu rosto? Entre em contato comigo e agende seu horário. Será um prazer receber você no meu espaço.</p>
+            <a class="btn btn-dourado" href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20quero%20agendar%20minha%20limpeza%20de%20pele" target="_blank" rel="noopener">Agendar minha limpeza de pele</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PARA QUEM É INDICADA ===================== -->
+    <section class="secao" style="padding-top:0">
+      <div class="container">
+        <div class="indicada">
+          <div class="indicada-img">
+            <img src="limpeza-de-pele-sbc-pauliceia.jpg" alt="Limpeza de pele profunda em Paulicéia, São Bernardo do Campo" loading="lazy">
+          </div>
+          <div class="indicada-texto">
+            <h2>Para quem é indicada</h2>
+            <h3>A limpeza pele serve para praticamente todos os tipos de pele, mas é especialmente recomendada para:</h3>
+            <ul class="lista">
+              <li>Pessoas com cravos: ajuda a remover cravos abertos e fechados, conforme a avaliação da pele.</li>
+              <li>Pele oleosa: auxilia na remoção do excesso de oleosidade e das impurezas acumuladas.</li>
+              <li>Pessoas com poros obstruídos: contribui para desobstruir os poros e melhorar o aspecto da pele.</li>
+              <li>Quem usa maquiagem frequentemente: ajuda a remover resíduos acumulados, complementando os cuidados diários.</li>
+              <li>Pessoas com a pele sem viço: a remoção de células mortas pode deixar a pele com aparência mais uniforme e renovada.</li>
+              <li>Homens que desejam cuidar da pele: ajuda a remover cravos e impurezas, controlar a oleosidade e manter a pele limpa, inclusive em áreas com pelos da barba, conforme a avaliação estética.</li>
+            </ul>
+            <a class="btn btn-dourado" href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20quero%20falar%20com%20a%20Fl%C3%A1via" target="_blank" rel="noopener">Falar com a Flávia</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== BENEFÍCIOS ===================== -->
+    <section class="secao beneficios">
+      <div class="container">
+        <span class="rotulo">Para que serve</span>
+        <h2>Benefícios da limpeza de pele  São Bernardo do Campo na Paulicéia,sp</h2>
+        <p class="intro">A limpeza de pele pode ser procurada por diferentes motivos. Algumas pessoas querem cuidar da oleosidade, outras desejam remover cravos ou simplesmente reservar um momento para cuidar do rosto.</p>
+        <div class="grade-beneficios">
+          <p class="beneficio">Ajuda a controlar a oleosidade excessiva do rosto</p>
+          <p class="beneficio">Ajuda a prevenir rugas e linhas de expressão</p>
+          <p class="beneficio">Ajuda a melhorar a aparência de cravos</p>
+          <p class="beneficio">Ajuda a deixar a pele mais luminosa e com aparência menos opaca</p>
+        </div>
+        <div class="botao-centro">
+          <a class="btn btn-dourado" href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20limpeza%20de%20pele" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ANTES E DEPOIS ===================== -->
+    <section class="secao antes-depois">
+      <div class="container">
+        <h2>Antes e depois da limpeza de pele  em São Bernardo do Campo na Paulicéia</h2>
+        <div class="galeria">
+          <figure><img src="antes-d-limpeza-de-pele/antes-e-depois-limpeza-de-pele-ao-bernardo-do-campo-pauliceia.jpg" alt="Resultado de limpeza de pele no Studio Flávia Demétrio Estética e Bem Estar" loading="lazy"></figure>
+
+          <figure><img src="antes-d-limpeza-de-pele/antes-e-depois-limpeza-de-pele-profunda-sao-bernardo-do-campo-pauliceia.jpg" alt="Antes e depois de limpeza de pele facial" loading="lazy"></figure>
+          <figure><img src="antes-durante-depois-limpeza-de-pele-studio-flavia-demetrio-pauliceia-sao-bernardo-do-campo.jpg" alt="Pele após limpeza de pele profunda" loading="lazy"></figure>
+          <figure><img src="antes-d-limpeza-de-pele/antes-e-depois-limpeza-de-pele-profunda1-sao-bernardo-do-campo-pauliceia.jpg" alt="Antes e depois de limpeza de pele no Studio Flávia Demétrio Estética e Bem Estar" loading="lazy"></figure>
+          <figure><img src="antes-d-limpeza-de-pele/antes-e-depois-limpeza-de-pele-profunda-sao-bernardo-do-campo-pauliceia.jpg" alt="Antes, durante e depois de limpeza de pele" loading="lazy"></figure>
+          <figure><img src="antes-d-limpeza-de-pele/antes-e-depois-limpeza-de-pele-masculina-sao-bernardo-do-campo-pauliceia.jpg" alt="Antes, durante e depois de limpeza de pele masculina" loading="lazy"></figure>
+        </div>
+        <div class="botao-centro">
+          <a class="btn btn-dourado" href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20limpeza%20de%20pele" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== LOCALIZAÇÃO ===================== -->
+    <section class="secao localizacao" id="localizacao">
+      <div class="container">
+        <div class="local-cartao">
+          <div class="local-texto">
+            <span class="rotulo">Localização</span>
+            <h2>Studio Flávia Demétrio Estética e Bem Estar</h2>
+            <p>O Studio Flávia Demétrio Estética e Bem Estar está localizado em Paulicéia, São Bernardo do Campo – SP. Se você mora em Paulicéia ou em bairros próximos e está pesquisando por limpeza de pele perto de mim, entre em contato com o estúdio para saber mais sobre o atendimento.</p>
+            <p><strong>Endereço:</strong> R. M.M.D.C., 276 - Paulicéia, São Bernardo do Campo - SP, 09690-000</p>
+            <div class="botoes">
+              <a class="btn btn-dourado" href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20limpeza%20de%20pele" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+              <a class="btn btn-roxo" href="https://www.google.com/maps/search/?api=1&query=Studio+Fl%C3%A1via+Dem%C3%A9trio+Paulic%C3%A9ia+S%C3%A3o+Bernardo+do+Campo" target="_blank" rel="noopener">Ver localização</a>
+            </div>
+          </div>
+          <div class="local-mapa">
+            <!-- Mapa incorporado. Se preferir, troque o endereço depois de "q=" -->
+            <iframe
+              title="Mapa do Studio Flávia Demétrio Estética e Bem Estar em Paulicéia, São Bernardo do Campo"
+              src="https://www.google.com/maps?q=Studio+Fl%C3%A1via+Dem%C3%A9trio+Paulic%C3%A9ia+S%C3%A3o+Bernardo+do+Campo&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== DÚVIDAS FREQUENTES ===================== -->
+    <section class="secao duvidas" id="duvidas">
+      <div class="container">
+        <span class="rotulo">Dúvidas frequentes</span>
+        <h2>Perguntas sobre a limpeza de pele</h2>
+
+        <details open>
+          <summary>Qual o valor da limpeza de pele em Paulicéia?</summary>
+          <p>O valor da limpeza de pele em Paulicéia, São Bernardo do Campo, pode variar de acordo com o tipo de procedimento e as necessidades da pele. Para saber o valor atualizado e consultar os horários disponíveis, entre em contato com o Studio Flávia Demétrio Estética e Bem Estar pelo WhatsApp.</p>
+        </details>
+
+        <details>
+          <summary>A limpeza de pele remove cravos?</summary>
+          <p>Sim. A limpeza de pele  inclui a extração de cravos e a remoção de impurezas acumuladas nos poros. O resultado depende do tipo de pele e da frequência dos cuidados.</p>
+        </details>
+
+        <details>
+          <summary>A limpeza de pele é indicada para pele oleosa?</summary>
+          <p>Sim. Quem tem pele oleosa ou mista costuma acumular mais impurezas e cravos, e por isso pode se beneficiar da limpeza. Na avaliação, o procedimento é adaptado às características da sua pele.</p>
+        </details>
+
+        <details>
+          <summary>Quanto tempo dura uma sessão de limpeza de pele?</summary>
+          <p>A duração pode variar conforme as necessidades da pele. Ao agendar pelo WhatsApp, você recebe a informação do tempo previsto para o seu atendimento.</p>
+        </details>
+
+        <details>
+          <summary>Posso fazer limpeza de pele regularmente?</summary>
+          <p>Sim. A frequência ideal depende do tipo de pele e da necessidade de cada pessoa. Durante o atendimento, a Flávia orienta qual intervalo faz mais sentido para você.</p>
+        </details>
+
+        <details>
+          <summary>A limpeza de pele dói?</summary>
+          <p>A maioria das pessoas sente um leve desconforto em alguns momentos, principalmente na extração de cravos, e a sensibilidade varia de pessoa para pessoa. O atendimento é feito com cuidado e respeitando o seu limite.</p>
+        </details>
+
+        <details>
+          <summary>Onde fazer limpeza de pele em São Bernardo do Campo?</summary>
+          <p>O Studio Flávia Demétrio Estética e Bem Estar atende em Paulicéia, São Bernardo do Campo – SP. Chame no WhatsApp para agendar o seu horário.</p>
+        </details>
+        <div class="botao-centro">
+          <a class="btn btn-dourado" href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20limpeza%20de%20pele" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CHAMADA FINAL ===================== -->
+    <section class="final">
+      <div class="container">
+        <span class="rotulo">Agende sua sessão</span>
+        <h2>Sua pele está precisando de um cuidado especial?</h2>
+        <p>Reserve um momento para cuidar de você. Consulte o valor atualizado e verifique os horários disponíveis no Studio Flávia Demétrio Estética e Bem Estar.</p>
+        <a class="btn btn-dourado" href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20limpeza%20de%20pele" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer class="rodape">
+    <div class="container">
+      <strong>Studio Flávia Demétrio Estética e Bem Estar</strong>
+
+      <ul class="social" aria-label="Redes sociais">
+        <li><a href="https://wa.me/5511994986162" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21l1.6-4.7A8.5 8.5 0 1 1 8 19.5L3 21z"/><path d="M9 8.5c0 3.6 2.9 6.5 6.5 6.5l1-1.6-2-1-.8.8c-1-.4-1.9-1.3-2.3-2.3l.8-.8-1-2L9 8.5z"/></svg>WhatsApp</a></li>
+        <li><a href="https://www.instagram.com/studioflaviademetrio/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6"/></svg>Instagram</a></li>
+        <li><a href="https://web.facebook.com/studioflaviademetrio/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8.5a.5.5 0 0 1 .5-.5z"/></svg>Facebook</a></li>
+        <li><a href="https://www.tiktok.com/@studioflaviademetrio" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v11.2a3.7 3.7 0 1 1-3.7-3.7M14 3c.4 2.6 2.1 4.2 5 4.4"/></svg>TikTok</a></li>
+        <li><a href="https://www.youtube.com/channel/UC7ydwu4BY7Z6HrHHh6yGv1w" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.5v5l4.5-2.5z"/></svg>YouTube</a></li>
+        <li><a href="https://br.pinterest.com/studioflaviademetrio/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10.6 20.2l1.7-6.6M9.3 12.6c-.5-2.3 1.1-4.3 3.3-4.3 2 0 3.2 1.3 3.2 3 0 2.2-1.2 3.9-2.8 3.9-.9 0-1.5-.6-1.5-1.5"/></svg>Pinterest</a></li>
+      </ul>
+
+      Limpeza de Pele em Paulicéia, São Bernardo do Campo – SP · Estética facial com atendimento personalizado e cuidado com a sua pele.
+    </div>
+  </footer>
+
+</body>
+</html>

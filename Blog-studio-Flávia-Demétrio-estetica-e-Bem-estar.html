@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta name="color-scheme" content="light only">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Blog | Studio Flávia Demétrio</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="imagem/logo-icone-flavia.jpg" type="image/jpeg">
+<meta name="description" content="">
+<style>
+:root{color-scheme:light}
+:root{
+  --roxo:#4a1d6b; --roxo-claro:#7b3fa8; --lilas:#f3ecf8; --dourado:#c9a24b; --dourado-esc:#8f6d1c;
+  --bg:#ffffff; --card:#ffffff; --texto:#2a2033; --suave:#6a5d75; --borda:#e6dbee;
+  --display:'Cormorant Garamond',Georgia,serif; --corpo:'Jost','Segoe UI',Arial,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--texto);font-family:var(--corpo);line-height:1.6}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible{outline:3px solid var(--dourado);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+header.topo{background:var(--roxo);color:#fff;border-bottom:4px solid var(--dourado)}
+header.topo .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:18px;padding-bottom:18px}
+.marca{font-family:var(--display);font-size:1.5rem;font-weight:700;line-height:1.1}
+.marca small{display:block;font-family:var(--corpo);font-size:.75rem;font-weight:400;color:#e6d3a3;letter-spacing:.04em}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav a{font-size:.95rem;padding:4px 0;border-bottom:2px solid transparent}
+nav a:hover,nav a[aria-current="page"]{border-bottom-color:var(--dourado)}
+
+.intro{padding:56px 0 28px;text-align:center}
+.intro h1{font-family:var(--display);font-size:clamp(2.2rem,6vw,3.6rem);line-height:1.05;margin:0 0 12px;color:var(--texto)}
+.intro p{max-width:56ch;margin:0 auto;color:var(--suave);font-size:1.05rem}
+
+.destaque{display:grid;grid-template-columns:1fr 1fr;background:var(--card);border:1px solid var(--borda);border-radius:18px;overflow:hidden;margin:20px 0 48px}
+.destaque .arte{background:linear-gradient(135deg,var(--roxo) 0%,var(--roxo-claro) 100%);color:#fff;display:flex;align-items:center;justify-content:center;padding:40px;min-height:280px;text-align:center}
+.destaque .texto{padding:36px;display:flex;flex-direction:column;justify-content:center;gap:12px}
+.destaque h2{font-family:var(--display);font-size:2rem;line-height:1.1;margin:0}
+.destaque p{margin:0;color:var(--suave)}
+
+.tag{align-self:flex-start;background:var(--card);border:1px solid var(--dourado);color:var(--dourado-esc);font-size:.8rem;font-weight:600;padding:3px 12px;border-radius:999px}
+.meta{font-size:.85rem;color:var(--suave)}
+.ler{align-self:flex-start;font-weight:600;color:var(--dourado-esc);border-bottom:2px solid var(--dourado);padding-bottom:1px}
+
+h2.secao{font-family:var(--display);font-size:2rem;margin:0 0 20px}
+.grade{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;padding-bottom:64px}
+.post{background:var(--card);border:1px solid var(--borda);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s}
+.post:hover{transform:translateY(-3px)}
+.post .capa{height:130px;display:flex;align-items:flex-end;padding:16px;color:#fff;font-family:var(--display);font-size:1.25rem;font-weight:600}
+.c1{background:linear-gradient(135deg,#4a1d6b,#7b3fa8)}
+.c2{background:linear-gradient(135deg,#8f6d1c,#c9a24b)}
+.c3{background:linear-gradient(135deg,#5e2a85,#a36bc9)}
+.post .corpo{padding:20px;display:flex;flex-direction:column;gap:10px;flex:1}
+.post h3{font-family:var(--display);font-size:1.45rem;line-height:1.15;margin:0}
+.post p{margin:0;color:var(--suave);font-size:.95rem}
+.post .ler{margin-top:auto}
+
+.cta{background:var(--roxo);color:#fff;text-align:center;padding:48px 20px;border-top:4px solid var(--dourado)}
+.cta h2{font-family:var(--display);font-size:2rem;margin:0 0 8px}
+.cta p{margin:0 0 20px;color:#e6d3a3}
+.botao{display:inline-block;background:var(--dourado);color:#2a1a00;font-weight:600;padding:12px 28px;border-radius:999px}
+.botao:hover{filter:brightness(1.08)}
+
+/* Rodapé */
+footer{background:#2f1146;color:#cdb9dc;font-size:.95rem;padding:48px 0 24px;text-align:left}
+footer .container{max-width:1120px;margin:0 auto;padding:0 20px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:32px}
+footer h4{font-family:var(--display);font-size:1.3rem;color:#fff;margin:0 0 12px}
+footer p{margin:0 0 8px}
+footer .foot-grid a{display:block;padding:3px 0;color:#cdb9dc}
+footer .foot-grid a:hover{color:var(--dourado)}
+footer a.btn{display:inline-block;background:var(--dourado);color:#2a1a00;font-weight:600;padding:8px 18px;border-radius:999px}
+footer a.btn:hover{color:#2a1a00;filter:brightness(1.08)}
+footer .copy{border-top:1px solid rgba(255,255,255,.15);margin:32px 0 0;padding-top:18px;text-align:center;font-size:.85rem}
+
+/* Botão flutuante do WhatsApp */
+.wpp{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));width:56px;height:56px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.6rem;box-shadow:0 4px 14px rgba(0,0,0,.3);z-index:50}
+.wpp:hover{filter:brightness(1.08)}
+
+@media (max-width:900px){.grade{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:760px){.foot-grid{grid-template-columns:1fr}}
+@media (max-width:640px){
+  .destaque{grid-template-columns:1fr}
+  .destaque .arte{min-height:200px}
+  .destaque .texto{padding:24px}
+  .grade{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){.post{transition:none}.post:hover{transform:none}}
+</style>
+</head>
+<body>
+
+<header class="topo">
+  <div class="wrap">
+    <a class="marca" href="#">Studio Flávia Demétrio<small>Estética e Bem Estar</small></a>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="#conteudo-principal">Início</a></li>
+        
+        <li><a href="#" aria-current="page">Blog</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo-principal">
+  <section class="intro wrap">
+    <h1>Blog do meu studio</h1>
+    <p>Aqui eu compartilho dicas de cuidados com a pele e o corpo, direto do meu studio em Paulicéia, em São Bernardo do Campo.</p>
+  </section>
+
+<div class="wrap">
+  <article class="destaque">
+
+    <div class="arte">
+      <img
+        src="antes-d-limpeza-de-pele/limpeza--de-pele-perto-de-min.jpg"
+        alt="o que e limpeza de pele"
+      >
+    </div>
+
+    <div class="texto">
+      <span class="tag">Limpeza de Pele</span>
+
+      <h2>O que é limpeza de pele?</h2>
+
+      <p>
+        Eu explico que a limpeza de pele é um procedimento estético
+        que remove impurezas, excesso de oleosidade e células mortas.
+        Com ela, eu deixo a pele preparada para receber hidratação
+        e outros cuidados.
+      </p>
+
+      <a class="ler" href="O-que-é-limpeza-de-pele-Estética -Bem-Estar.html">
+        Ler artigo completo
+      </a>
+    </div>
+
+  </article>
+</div>
+```
+</main>
+
+<section class="cta" id="contato">
+  <h2>Quer cuidar da sua pele comigo?</h2>
+  <p>Agende seu horário no meu studio, em Paulicéia, São Bernardo do Campo.</p>
+  <a class="botao" href="https://wa.me/5511994986162" target="_blank" rel="noopener noreferrer">Agendar pelo WhatsApp</a>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <h3>Studio Flávia Demétrio Estética e Bem Estar</h3>
+        <p>Estética Facial em Paulicéia, São Bernardo do Campo.</p>
+        <p>📍 Paulicéia – São Bernardo do Campo – SP</p>
+        <a class="btn btn-sm" href="#contato" style="display:inline-block;margin-top:8px;opacity:1">Como chegar</a>
+      </div>
+      <div>
+        <h4>Minhas redes sociais</h4>
+        <a href="https://wa.me/5511994986162" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="https://www.instagram.com/studioflaviademetrio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://web.facebook.com/studioflaviademetrio/" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.tiktok.com/@studioflaviademetrio" target="_blank" rel="noopener noreferrer">TikTok</a>
+        <a href="https://www.youtube.com/channel/UC7ydwu4BY7Z6HrHHh6yGv1w" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="https://br.pinterest.com/studioflaviademetrio/" target="_blank" rel="noopener noreferrer">Pinterest</a>
+      </div>
+    </div>
+    <p class="copy">© Studio Flávia Demétrio Estética e Bem Estar – Todos os direitos reservados | Política de Privacidade</p>
+  </div>
+</footer>
+
+<a class="wpp" href="https://wa.me/5511994986162" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">💬</a>
+
+</body>
+</html>
